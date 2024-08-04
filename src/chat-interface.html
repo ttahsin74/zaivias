@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Services</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../font-awsome-css/all.min.css" />
+    <link rel="stylesheet" href="../font-awsome-css/fontawesome.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <section class="w-full">
+      <!-- ==============================Chat  section=============== -->
+      <div class="flex h-screen antialiased bg-[#F0F2F5]">
+        <div class="flex flex-row h-full w-screen m-auto">
+          <div
+            id="showProfile"
+            class="order-2 flex-shrink-0 w-screen h-screen md:w-auto md:h-auto md:bg-transparent absolute md:static top-0 right-[-110%] z-10 duration-300 hidden md:block"
+          >
+            <div
+              class="absolute top-0 right-0 z-10 flex-col bg-[white] h-screen overflow-auto p-3 md:static w-full sm:w-[300px] flex-shrink-0"
+            >
+              <div
+                class="flex flex-col items-center bg- border border-gray-200 w-full py-6 px-4 rounded-lg"
+              >
+                <div class="h-20 w-20 rounded-full border overflow-hidden">
+                  <img
+                    src="./image/vendor-dp696x1044.jpg"
+                    alt="Avatar"
+                    class="h-full w-full"
+                  />
+                </div>
+
+                <div
+                  class="text-sm font-semibold mt-2 flex items-center gap-2 text-[#313131]"
+                >
+                  <span>Luke Zocci</span>
+                  <span class="bg-green-500 rounded-full p-1"></span>
+                </div>
+                <div class="text-sm text-[#525252] mt-[5px]">
+                  Fitness Trainer from <span>USA</span>
+                </div>
+              </div>
+              <div class="">
+                <h3 class="text-lg md:text-[20px] font-medium text-[#313131]">
+                  Description
+                </h3>
+                <div class="mt-2">
+                  <p class="md:text-base text-sm font-normal text-[#313131]">
+                    I'am a passionate gym trainer specializing in personalized
+                    fitness programs for strength, cardio, and nutrition.
+                    Committed to helping clients achieve their fitness goals and
+                    lead healthier lives.
+                  </p>
+                </div>
+              </div>
+              <div class="bg-white py-3 mt-2 border-t-2">
+                <h3 class="text-lg md:text-[20px] font-medium text-[#313131]">
+                  language
+                </h3>
+                <div class="flex gap-2 items-center mt-2">
+                  <p class="text-[#313131] font-medium text-base">English</p>
+                  <p class="text-[#313131] font-normal text-sm">(fluent)</p>
+                </div>
+              </div>
+
+              <div class="bg-white py-3 mt-2 border-t-2">
+                <h3 class="text-lg md:text-[20px] font-medium text-[#313131]">
+                  Service Area
+                </h3>
+                <div class="flex items-center gap-3 text-sm flex-wrap mt-2">
+                  <button
+                    class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+                  >
+                    Functional Training
+                  </button>
+                  <button
+                    class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+                  >
+                    Dumbbells
+                  </button>
+                  <button
+                    class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+                  >
+                    Rollers
+                  </button>
+                  <button
+                    class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+                  >
+                    Dumbbells
+                  </button>
+                  <button
+                    class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+                  >
+                    Dumbbells
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col flex-auto h-full border-r">
+            <div
+              class="flex flex-col flex-auto flex-shrink-0 bg-white h-full py-3"
+            >
+              <div
+                class="w-full flex items-center justify-between px-3 pb-3 shadow-md"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="h-10 w-10 rounded-full">
+                    <img
+                      class="rounded-full"
+                      src="./image/vendor-dp696x1044.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h5 class="text-base font-medium text-[#313131]">
+                      Luke Zocci
+                    </h5>
+                    <p class="text-[#525252] text-sm">Fitness Trainer</p>
+                  </div>
+                </div>
+                <div
+                  id="showProfileButtons"
+                  class="text-[22px] text-[#313131] cursor-pointer"
+                >
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
+              </div>
+              <div class="flex flex-col h-full overflow-x-auto gig-about mb-4">
+                <div class="flex flex-col h-full">
+                  <div class="grid grid-cols-12 gap-y-1">
+                    <div
+                      class="col-start-1 col-end-11 sm:col-end-10 lg:col-end-8 p-3 rounded-lg"
+                    >
+                      <div class="flex flex-row items-start">
+                        <div
+                          class="flex items-center justify-center h-10 w-10 rounded-full flex-shrink-0"
+                        >
+                          <img
+                            class="rounded-full"
+                            src="./image/vendor-dp696x1044.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="relative ml-3 text-sm bg-white pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Hey How are you today?
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-1 col-end-11 sm:col-end-10 lg:col-end-8 p-3 rounded-lg"
+                    >
+                      <div class="flex flex-row items-start">
+                        <div
+                          class="flex items-center justify-center h-10 w-10 rounded-full flex-shrink-0"
+                        >
+                          <img
+                            class="rounded-full"
+                            src="./image/vendor-dp696x1044.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="relative ml-3 text-sm bg-white pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Vel ipsa commodi illum saepe numquam maxime
+                            asperiores voluptate sit, minima perspiciatis.
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-4 sm:col-start-6 col-end-13 p-3 rounded-lg"
+                    >
+                      <div
+                        class="flex items-center justify-start flex-row-reverse"
+                      >
+                        <div
+                          class="relative ml-3 bg-[#E0E7FF] pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            I'm ok what about you?
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-4 sm:col-start-6 col-end-13 p-3 rounded-lg"
+                    >
+                      <div
+                        class="flex items-center justify-start flex-row-reverse"
+                      >
+                        <div
+                          class="relative ml-3 bg-[#E0E7FF] pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                            ?
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-1 col-end-11 sm:col-end-10 lg:col-end-8 p-3 rounded-lg"
+                    >
+                      <div class="flex flex-row items-start">
+                        <div
+                          class="flex items-center justify-center h-10 w-10 rounded-full flex-shrink-0"
+                        >
+                          <img
+                            class="rounded-full"
+                            src="./image/vendor-dp696x1044.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="relative ml-3 text-sm bg-white pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-4 sm:col-start-6 col-end-13 p-3 rounded-lg"
+                    >
+                      <div
+                        class="flex items-center justify-start flex-row-reverse"
+                      >
+                        <div
+                          class="relative ml-3 bg-[#E0E7FF] pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                            ?
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-4 sm:col-start-6 col-end-13 p-3 rounded-lg"
+                    >
+                      <div
+                        class="flex items-center justify-start flex-row-reverse"
+                      >
+                        <div
+                          class="relative ml-3 bg-[#E0E7FF] py-5 px-4 shadow rounded-xl"
+                        >
+                          <div class="space-y-2">
+                            <div class="w-[200px]">
+                              <img
+                                id="modalMessageFile"
+                                class="w-full rounded-md"
+                                src="./image/gym-dumbells.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="w-[200px]">
+                              <img
+                                id="modalMessageFile"
+                                class="w-full rounded-md"
+                                src="./image/gem-center.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-1 col-end-11 sm:col-end-10 lg:col-end-8 p-3 rounded-lg"
+                    >
+                      <div class="flex flex-row items-start">
+                        <div
+                          class="flex items-center justify-center h-10 w-10 rounded-full flex-shrink-0"
+                        >
+                          <img
+                            class="rounded-full"
+                            src="./image/vendor-dp696x1044.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="relative ml-3 text-sm bg-white pt-2 pb-5 px-4 shadow rounded-xl"
+                        >
+                          <p class="text-[#313131] sm:text-base text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Vel ipsa commodi illum saepe
+                          </p>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-1 col-end-11 sm:col-end-10 lg:col-end-8 p-3 rounded-lg"
+                    >
+                      <div class="flex flex-row items-start">
+                        <div
+                          class="flex items-center justify-center h-10 w-10 rounded-full flex-shrink-0"
+                        >
+                          <img
+                            class="rounded-full"
+                            src="./image/vendor-dp696x1044.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="relative ml-3 text-sm bg-white py-5 px-4 shadow rounded-xl"
+                        >
+                          <div class="space-y-2">
+                            <div class="w-[200px]">
+                              <img
+                                id="modalMessageFile"
+                                class="w-full rounded-md"
+                                src="./image/gallery-pic-five.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="w-[200px]">
+                              <img
+                                id="modalMessageFile"
+                                class="w-full rounded-md"
+                                src="./image/gigi-pic-four.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <span
+                            class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                            >27 Jul 2024, 12.24</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-start-4 sm:col-start-6 col-end-13 p-3 rounded-lg"
+                    >
+                      <div
+                        class="flex items-center justify-start flex-row-reverse"
+                      >
+                        <div>
+                          <div
+                            class="relative ml-3 bg-[#E0E7FF] pt-2 pb-5 px-4 shadow rounded-xl"
+                          >
+                            <p class="text-[#313131] sm:text-base text-sm">
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing. ?
+                            </p>
+                            <span
+                              class="absolute bottom-0 text-[#7c7c7c] right-2 text-[10px]"
+                              >27 Jul 2024, 12.24</span
+                            >
+                          </div>
+                          <p class="text-[#313131] text-end text-[12px] mr-1">
+                            Delevered
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-full items-center gap-3 flex-wrap px-4">
+                  <div class="relative">
+                    <img
+                      class="w-20 rounded-md"
+                      src="./image/gem-center.jpg"
+                      alt=""
+                    />
+                    <div class="text-sm absolute text-[red] -top-1 -right-1">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img
+                      class="w-20 rounded-md"
+                      src="./image/gem-center.jpg"
+                      alt=""
+                    />
+                    <div class="text-sm absolute text-[red] -top-1 -right-1">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img
+                      class="w-20 rounded-md"
+                      src="./image/gem-center.jpg"
+                      alt=""
+                    />
+                    <div class="text-sm absolute text-[red] -top-1 -right-1">
+                      <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4"
+                >
+                  <div>
+                    <button
+                      class="flex items-center justify-center text-lg border py-2 px-[10px] rounded-full text-[#9ca3af] hover:text-[#4b5563] relative"
+                    >
+                      <i class="fa-solid fa-file-image"></i>
+                      <input
+                        class="absolute top-0 left-0 z-10 w-[35px] rounded-full cursor-pointer opacity-0"
+                        type="file"
+                      />
+                    </button>
+                  </div>
+                  <div class="flex-grow ml-4">
+                    <div class="relative w-full">
+                      <input
+                        type="text"
+                        class="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <button
+                      class="flex items-center justify-center bg-[#1E293B] rounded-xl text-white px-4 py-[6px] flex-shrink-0"
+                    >
+                      <span>Send</span>
+                      <span class="ml-2">
+                        <svg
+                          class="w-4 h-4 transform rotate-45 -mt-px"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                          ></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== modalMessageFile================ -->
+
+      <div
+        id="showMessageModal"
+        class="w-full flex items-center justify-center fixed top-0 left-0 z-20 h-screen overflow-hidden hidden bg-[#0000009a]"
+      >
+        <div class="relative">
+          <img
+            id="modalImage"
+            class="w-full sm:w-[600px] md:w-[700px]"
+            src=""
+            alt="Modal Image"
+          />
+          <div
+            id="closeModal"
+            class="absolute cursor-pointer w-10 h-10 flex items-center justify-center bg-[#0000008a] top-1 right-1 text-[26px] text-[#fafafa] rounded-full"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============================== modalMessageFile================ -->
+
+      <!-- =============================chat section=============== -->
+    </section>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+      // =---======================message file show=====================
+      document.addEventListener("DOMContentLoaded", function () {
+        const modalMessageFiles =
+          document.querySelectorAll("#modalMessageFile");
+        const showMessageModal = document.getElementById("showMessageModal");
+        const modalImage = document.getElementById("modalImage");
+        const closeModal = document.getElementById("closeModal");
+
+        modalMessageFiles.forEach(function (image) {
+          image.addEventListener("click", function () {
+            const src = this.src;
+            modalImage.src = src;
+            showMessageModal.classList.remove("hidden");
+            showMessageModal.classList.add("block");
+          });
+        });
+
+        closeModal.addEventListener("click", function () {
+          showMessageModal.classList.add("bg-[#0000003b]");
+          showMessageModal.classList.add("hidden");
+        });
+
+        // Optional: close the modal when clicking outside of it
+        showMessageModal.addEventListener("click", function (e) {
+          if (e.target === showMessageModal) {
+            showMessageModal.classList.remove("block");
+            showMessageModal.classList.add("hidden");
+          }
+        });
+      });
+      // =---======================message file show=====================
+
+      // ===========================show Profile========================
+      document.addEventListener("DOMContentLoaded", function () {
+        const showProfileButton = document.getElementById("showProfileButtons");
+        const showProfile = document.getElementById("showProfile");
+
+        showProfileButton.addEventListener("click", function () {
+          showProfile.classList.remove("right-[-110%]");
+          showProfile.classList.remove("hidden");
+
+          showProfile.classList.add("block");
+          showProfile.classList.add("right-0");
+          showProfile.classList.add("bg-[#0000003b]");
+        });
+        showProfile.addEventListener("click", function () {
+          showProfile.classList.add("hidden");
+          showProfile.classList.remove("block");
+          showProfile.classList.add("right-[-110%]");
+          showProfile.classList.remove("right-0");
+          showProfile.classList.remove("bg-[#0000003b]");
+        });
+      });
+
+      // ===========================show Profile========================
+    </script>
+  </body>
+</html>

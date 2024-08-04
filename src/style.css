@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Container {
+  max-width: 1280px;
+  margin: auto;
+}
+/* ===========================navber========================== */
+
+.my-custom-hidden {
+  display: none;
+}
+/* ==============================navber========================== */
+
+/* =========category slider start========================== */
+.slider-container {
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  /* width: 90px;
+  margin: auto; */
+  flex: 0 0 7.692%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.slide:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.slider-button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  border: 1px solid rgb(82, 82, 82);
+}
+.info-bg {
+  background-image: url(./image/info-bg-gym.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-color-info {
+  background: rgb(13, 13, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 13, 131, 0) 0%,
+    rgba(2, 0, 36, 0.925) 0%,
+    rgba(3, 1, 46, 0.842) 12%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+/* =========category slider end========================== */
+
+/* ======================custom-carusol section start=============== */
+.team-member-slide {
+  padding: 10px;
+  text-align: center;
+}
+
+.team-member-slide img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  filter: grayscale(100%);
+}
+
+.team-member-slide.slick-center img {
+  filter: none;
+}
+
+#slide-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* ======================custom-carusol section end=============== */
+
+/* .trainer-info-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.trainer-info-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  height: 50px;
+}
+.trainer-info-scroll:hover::-webkit-scrollbar-thumb {
+  background: #cccfd2;
+} */
+
+.vendor-price::before {
+  content: "";
+  width: 164px;
+  height: 164px;
+  position: absolute;
+  left: -15%;
+  bottom: 80%;
+  border-radius: 100%;
+  background: #ead97a;
+}
+.vendor-price::after {
+  content: "";
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  right: 30px;
+  bottom: 70%;
+  border-radius: 100%;
+  background: #eff1f2;
+  opacity: 0.1;
+}
+
+.tabButton:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: black;
+  height: 4px;
+  transition: all 0.3s;
+  z-index: 50;
+}
+.gallery-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.address-details a {
+  text-align: center;
+  width: 180px;
+  margin: auto;
+  display: block;
+  margin: auto;
+  word-spacing: 0.2em;
+}
+.map-shadow {
+  -webkit-box-shadow: 5px 7px 39px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 7px 39px -25px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 7px 39px -25px rgba(0, 0, 0, 0.75);
+}
+
+.slider-item {
+  margin-right: 20px;
+}
+
+.gig-about::-webkit-scrollbar {
+  width: 5px;
+}
+
+.gig-about::-webkit-scrollbar-thumb {
+  background: transparent;
+  height: 50px;
+}
+.gig-about:hover::-webkit-scrollbar-thumb {
+  background: #cccfd2;
+}
+
+/* ==============gig slider========== */
+
+/* ==============gig slider========== */
+  .range_container {
+    --_marker-border-clr: #1E293B;
+    --_marker-size: 15px;
+    --_track-heigt: 3px;
+  
+    --_tooltip-bg-clr: rgba(0, 0, 0, 0.4);
+    --_tooltip-txt-clr: var(--_marker-border-clr);
+      
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sliders_control {
+    position: relative;
+}
+
+.slider-tooltip-one {
+    position: absolute;
+    top: 0 rem;
+    left: 0;
+    width: fit-content;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    translate: -50% 0;
+}
+.slider-tooltip-two {
+    position: absolute;
+    top: -2.3rem;
+    left: 0;
+    width: fit-content;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    translate: -50% 0;
+}
+
+.slider-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              0%;
+    translate: -50% 0;
+    width: .5rem;
+    height: .5rem;
+    rotate: 45deg;
+    z-index: -1;
+    background-color: inherit;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: var(--_marker-size);
+    height: var(--_marker-size);
+    background-color: var(--_marker-border-clr);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px var(--_marker-border-clr);
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: var(--_marker-size);
+    height: var(--_marker-size);
+    background-color: var(--_marker-border-clr);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px var(--_marker-border-clr);
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: var(--_track-heigt);
+    width: 100%;
+    position: absolute;
+    background-color: var(--_marker-border-clr);
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    position: relative;
+    width: calc(100% - var(--_marker-size));
+    margin-inline: auto;
+    font-size: 0.8rem;
+}
+
+.scale div {
+    position: absolute;
+    translate: -50% 0;
+}
+
+.scale div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -125%;
+    width: 1px;
+    height: 10px;
+    background-color:#666;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  
+}
+
+
+/* ====================responsive==================== */
+
+@media (min-width: 100px) and (max-width: 299px) {
+  .width-fixed {
+    max-width: 100px;
+  }
+  
+}
+@media (min-width: 300px) and (max-width: 449px) {
+  .info-bg {
+    background-position: right;
+  }
+
+  .info-bg {
+    background-position: calc(60% - 10px) calc(50% - 00px);
+  }
+  .width-fixed {
+    max-width: 300px;
+  }
+  .responsive-width-card{
+    max-width: 320px;
+  }
+}
+@media (min-width: 450px) and (max-width: 639px) {
+  .info-bg {
+    background-position: right;
+  }
+  .info-bg {
+    background-position: calc(60% - 10px) calc(50% - 00px);
+  }
+  .width-fixed {
+    max-width: 400px;
+  }
+  .responsive-width-card{
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .Container {
+    max-width: 640px;
+    margin: auto;
+  }
+  .info-bg {
+    background-position: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Container {
+    max-width: 7680px;
+    margin: auto;
+  }
+  .info-bg {
+    background-position: right;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .Container {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .info-bg {
+    background-position: right;
+  }
+  .slider-item {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .Container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .slider-item {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1536px) and (max-width: 5000px) {
+  .Container {
+    max-width: 1320px;
+    margin: auto;
+  }
+  .slider-item {
+    margin-right: 20px;
+  }
+}

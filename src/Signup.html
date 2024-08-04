@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../font-awsome-css/all.min.css" />
+    <link rel="stylesheet" href="../font-awsome-css/fontawesome.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <section class="bg-[#F0F2F5] w-full">
+      <!-- ===============nav section======================= -->
+
+      <section class="sticky top-0 left-0 z-10">
+        <nav class="bg-[#1E293B]">
+          <div class="container m-auto px-4">
+            <div class="flex items-center justify-between py-1">
+              <div class="py-2">
+                <img
+                  class="w-[155px]"
+                  src="image/zaivias-logo.png"
+                  alt="zaivias logo"
+                />
+              </div>
+              <div class="text-base md:block hidden">
+                <ul class="flex gap-4 text-[#dfdfdf]">
+                  <li><a href="" class="text-decoration-none">Session</a></li>
+                  <li>
+                    <a href="" class="text-decoration-none">Experience</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-decoration-none capitalize"
+                      >Pro Expert</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex text-[#d8d8d8] items-center gap-4">
+                <div class="md:flex items-center gap-2 hidden">
+                  <p
+                    style="font-size: 12px"
+                    class="uppercase p-2 hover:bg-[#5050503f] rounded-3xl cursor-pointe"
+                  >
+                    ZAIVIAS home
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                </div>
+                <div
+                  style="border: 1px solid white; padding: 8px 18px"
+                  class="rounded-3xl relative"
+                  id="mainDiv"
+                >
+                  <div class="flex items-center gap-3">
+                    <div>
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="">
+                      <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                  </div>
+                  <!-- ============login option========= -->
+                  <div
+                    id="myModal"
+                    class="modal-content bg-[#e4e4e4] hidden absolute rounded-xl w-[200px] top-11 right-0 py-2 px-4 z-20"
+                  >
+                    <div class="border-b border-b-[#0000001c] pb-2">
+                      <p class="text-[#313131] text-base p-2 text-left">
+                        Sign Up
+                      </p>
+                      <p class="text-[#313131] text-base p-2 text-left">
+                        <a class="block" href="./src/login.html">Log in</a>
+                      </p>
+                    </div>
+                    <div class="pt-2">
+                      <p class="text-[#313131] text-base p-2 text-left">
+                        Gift Cards
+                      </p>
+                      <p class="text-[#313131] text-base p-2 text-left">
+                        Zaivias Home
+                      </p>
+                      <p class="text-[#313131] text-base p-2 text-left">
+                        Help Center
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ============login option========= -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- ===============nav section======================= -->
+
+      <!-- ====================================sign up section===================== -->
+
+      <section class="w-full">
+        <div class="container m-auto px-4 sm:px-0">
+          <div class="max-w-[920px] m-auto">
+            <div>
+              <div class="py-8">
+                <div
+                  style="align-items: stretch"
+                  class="grid md:grid-cols-2 grid-cols-1 w-full"
+                >
+                  <div style="flex: 1" class="w-[100%] py-7 px-10 bg-[#ffffff]">
+                    <div>
+                      <picture>
+                        <img
+                          src="./image/zaivias-logo.png"
+                          class="w-[150px] m-auto"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <div class="">
+                      <h4
+                        class="text-xl tracking-[0.25em] font-medium text-[#1E293B] text-center mt-3 uppercase"
+                      >
+                        Zaivias Membership
+                      </h4>
+                      <p class="text-[#313131] mt-2 text-center">
+                        Please Enter Your Details For Create Account
+                      </p>
+                    </div>
+                    <div class="mt-3">
+                      <form action="">
+                        <label
+                          for=""
+                          class="text-base font-medium block after:content-['*'] after:text-[#ff6b6b]"
+                        >
+                          Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="w-full py-[6px] px-4 outline-none border border-[#00000052] block rounded-[30px] mt-2 placeholder:text-sm"
+                          placeholder="Full Name"
+                        />
+                        <label
+                          for=""
+                          class="text-base font-medium block after:content-['*'] after:text-[#ff6b6b] mt-4"
+                        >
+                          Phone Number</label
+                        >
+                        <input
+                          type="tel"
+                          class="w-full py-[6px] px-4 outline-none border border-[#00000052] block rounded-[30px] mt-2 placeholder:text-sm"
+                          placeholder="Phone Number"
+                        />
+                        <label
+                          for=""
+                          class="text-base font-medium block after:content-['*'] after:text-[#ff6b6b] mt-4"
+                        >
+                          Email</label
+                        >
+                        <input
+                          type="email"
+                          class="w-full py-[6px] px-4 outline-none border border-[#00000052] block rounded-[30px] mt-2 placeholder:text-sm"
+                          placeholder="Email"
+                        />
+                        <label for="" class="text-base font-medium block mt-4">
+                          Password</label
+                        >
+                        <input
+                          type="text"
+                          class="w-full py-[6px] px-4 outline-none border border-[#00000052] block rounded-[30px] mt-2 placeholder:text-sm"
+                          placeholder="Password"
+                        />
+                        <div class="flex items-center justify-between mt-3">
+                          <div class="flex items-center gap-2">
+                            <input type="checkbox" />
+                            <span class="text-[#313131]">Remember me</span>
+                          </div>
+                        </div>
+                        <button
+                          class="mt-4 text-white font-semibold py-[6px] bg-[#1E293B] w-full text-center rounded-[30px]"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <p class="text-base font-normal mt-5 text-center">
+                      Have an ccount yet?
+                      <a
+                        href="./login.html"
+                        class="underline text-base font-medium"
+                      >
+                        Log In</a
+                      >
+                    </p>
+                  </div>
+
+                  <div
+                    style="
+                      background-image: url(./image/loging-bg.jpg);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                    "
+                    class="w-[100%]"
+                  >
+                    <div class="bg-[#1e293bcc] h-full md:py-[150px] py-[50px]">
+                      <div
+                        class="flex items-center justify-between gap-3 p-2 cursor-pointer"
+                      >
+                        <div
+                          class="text-2xl text-[#cfcfcf] w-[43px] h-[43px] flex items-center justify-center bg-[#ffffff1a]"
+                        >
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="mr-auto mb-1">
+                          <h6 class="text-[#cfcfcf] text-base font-medium">
+                            Visit Our Support Center
+                          </h6>
+                          <p class="text-base text-[#cfcfcf] font-normal">
+                            Get Guidness From Our Support Team
+                          </p>
+                        </div>
+                        <div class="text-xl text-[#cfcfcf] mb-1">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between gap-3 p-2 cursor-pointer"
+                      >
+                        <div
+                          class="text-2xl text-[#cfcfcf] w-[43px] h-[43px] flex items-center justify-center bg-[#ffffff1a]"
+                        >
+                          <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <div class="mr-auto mb-1">
+                          <h6 class="text-[#cfcfcf] text-base font-medium">
+                            View our trainer roadmap
+                          </h6>
+                          <p class="text-base text-[#cfcfcf] font-normal">
+                            Browse and see our trainer
+                          </p>
+                        </div>
+                        <div class="text-xl text-[#cfcfcf] mb-1">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between gap-3 p-2 cursor-pointer"
+                      >
+                        <div
+                          class="text-2xl text-[#cfcfcf] w-[43px] h-[43px] flex items-center justify-center bg-[#ffffff1a]"
+                        >
+                          <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="mr-auto mb-1">
+                          <h6 class="text-[#cfcfcf] text-base font-medium">
+                            Check Out The Letest Blog
+                          </h6>
+                          <p class="text-base text-[#cfcfcf] font-normal">
+                            See new features and updates
+                          </p>
+                        </div>
+                        <div class="text-xl text-[#cfcfcf] mb-1">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between gap-3 p-2 cursor-pointer"
+                      >
+                        <div
+                          class="text-2xl text-[#cfcfcf] w-[43px] h-[43px] flex items-center justify-center bg-[#ffffff1a]"
+                        >
+                          <i class="fa-solid fa-people-robbery"></i>
+                        </div>
+                        <div class="mr-auto mb-1">
+                          <h6 class="text-[#cfcfcf] text-base font-medium">
+                            See Our Comminuty
+                          </h6>
+                          <p class="text-base text-[#cfcfcf] font-normal">
+                            Get Guidness From Our Support Team
+                          </p>
+                        </div>
+                        <div class="text-xl text-[#cfcfcf] mb-1">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================sign up section===================== -->
+
+      <!-- ======================foter section start============================ -->
+      <section class="bg-[#1E293B] text-white">
+        <div class="Container px-4 m-auto">
+          <footer class="md:py-10 py-5 sm:px-6 lg:px-0">
+            <div class="mx-auto">
+              <div class="flex md:flex-nowrap flex-wrap gap-10">
+                <!-- Company Info -->
+                <div class="md:w-[40%] w-full mt-5 md:mt-0">
+                  <div class="flex items-center md:mb-4 mb-2">
+                    <a
+                      class="cursor-pointer block m-auto md:m-0"
+                      href="index.html"
+                    >
+                      <img
+                        class="w-[200px]"
+                        src="./image/zaivias-logo.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <p class="mb-4 text-[#cfcfcf] md:text-left text-center">
+                    Our company leads the industry in wealth management. We
+                    provide independent RIA and broker services that are powered
+                    by over 20 years of industry experience.
+                  </p>
+                </div>
+                <div class="md:w-[50%] w-full">
+                  <h4
+                    class="sm:text-[30px] text-[28px] font-semibold text-[#cfcfcf] mb-2 md:text-left text-center"
+                  >
+                    Get Inspired Weekly
+                  </h4>
+                  <p class="text-base text-[#cfcfcf]">
+                    Every sunrise marks a new opportunity to pursue your
+                    passions. Embrace the journey with courage, and let each
+                    small victory inspire your continued growth.
+                  </p>
+                  <form action="">
+                    <div class="mt-5 flex items-center gap-4">
+                      <input
+                        class="w-[60%] py-1 px-4 outline-none border-none"
+                        placeholder="Write Your Email"
+                        type="text"
+                      />
+                      <button
+                        class="w-[130px] text-[#1E293B] text-center py-1 font-semibold bg-[#E9D87D]"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <div class="relative">
+                <div
+                  id="footer"
+                  class="tab-carousel relative flex items-center gap-8 border-b-2 border-[#e2e2e285] text-left"
+                >
+                  <button
+                    id="tab1"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Popular
+                  </button>
+                  <button
+                    id="tab2"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Arts & culture
+                  </button>
+                  <button
+                    id="tab3"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Outdoors
+                  </button>
+                  <button
+                    id="tab4"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Mountains
+                  </button>
+                  <button
+                    id="tab5"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Unique stays
+                  </button>
+                  <button
+                    id="tab6"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Categories
+                  </button>
+                  <button
+                    id="tab7"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Things to do
+                  </button>
+                  <button
+                    id="tab8"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Tips & inspiration
+                  </button>
+                  <button
+                    id="tab9"
+                    class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                  >
+                    Trainers
+                  </button>
+                </div>
+                <button
+                  class="custom-prev lg:hidden block slider-button absolute top-1/2 left-0 transform -translate-y-1/2 text-[#ffffff87] px-2 py-[1px] rounded-full opacity-50 bg-[#1e293b46] text-sm"
+                  onclick="$('.tab-carousel').slick('slickPrev')"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="custom-next lg:hidden block slider-button absolute top-1/2 right-0 transform border -translate-y-1/2 px-2 py-[1px] rounded-full text-[#ffffff87] opacity-50 bg-[#1e293b46] text-sm"
+                  onclick="$('.tab-carousel').slick('slickNext')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div id="tabContent" class="mt-5">
+                <div id="tabPanel1" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Popular
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel2" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Arts & culture
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel3" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Outdoors
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel4" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Mountains
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel5" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Unique stays
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel6" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Category
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel7" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        things to do
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel8" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        tips & inspiration
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabPanel9" class="tabPanel hidden">
+                  <div
+                    class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                  >
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Trainers
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                    <div class="text-center sm:text-left">
+                      <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                        Health
+                      </h5>
+                      <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center md:gap-8 gap-3 mt-8 flex-wrap">
+              <h3 class="text-lg font-semibold mr-4">CONTACT US</h3>
+              <div class="flex gap-2 items-center">
+                <i class="fas fa-phone-alt mr-2"></i>
+                <p class="">+880123456789</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <i class="fas fa-envelope mr-2"></i>
+                <p class="">zaivias@example.com</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <p>California, USA</p>
+              </div>
+            </div>
+            <div
+              class="mt-5 border-t gap-4 border-gray-700 pt-6 flex flex-wrap justify-between items-center"
+            >
+              <p class="text-sm sm:text-base">
+                &copy; 2024 <span class="text-[#E0D385]">ZAIVIAS</span> Made
+                With <span class="text-red-500 text-[20px]">&hearts;</span> By
+                Sky Dream IT.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-[#0866FF]"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="hover:text-yellow-500"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="hover:text-yellow-500"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="hover:text-yellow-500"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+      <!-- ======================foter section end============================ -->
+    </section>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Toggle dropdown visibility when button is clicked
+        $("#mainDiv").on("click", function (event) {
+          $("#myModal").toggleClass("hidden");
+          event.stopPropagation(); // Prevent event from bubbling up to the document
+        });
+
+        // Hide dropdown when clicking outside of it
+        $(document).on("click", function (event) {
+          if (!$(event.target).closest("#mainDiv, #myModal").length) {
+            $("#myModal").addClass("hidden");
+          }
+        });
+
+        // Prevent hiding when clicking inside the dropdown
+        $("#myModal").on("click", function (event) {
+          event.stopPropagation();
+        });
+      });
+
+      // ==-======================foter sectopn start===============
+      function setActiveTab(tabId) {
+        // Get all tab buttons and panels
+        const tabButtons = document.querySelectorAll(".tabButton");
+        const tabPanels = document.querySelectorAll(".tabPanel");
+
+        // Hide all tab panels
+        tabPanels.forEach(function (tabPanel) {
+          tabPanel.classList.add("hidden");
+        });
+
+        // Remove 'active' class from all tabs
+        tabButtons.forEach(function (tabButton) {
+          tabButton.classList.remove(
+            "border-b-2",
+            "border-b-transparent",
+            "text-white"
+          );
+          tabButton.classList.add("bg-tranarent");
+        });
+
+        // Show the corresponding tab panel
+        document
+          .getElementById("tabPanel" + tabId.slice(-1))
+          .classList.remove("hidden");
+        // Add 'active' class to the clicked tab
+        document.getElementById(tabId).classList.remove("bg-gray-200");
+        document
+          .getElementById(tabId)
+          .classList.add("border-b-2", "border-b-white", "text-white");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setActiveTab("tab1");
+      });
+
+      document.querySelectorAll(".tabButton").forEach(function (tabButton) {
+        tabButton.addEventListener("click", function () {
+          var tabId = this.getAttribute("id");
+          setActiveTab(tabId);
+        });
+      });
+
+      // ================fotter tab carousel start========
+      $(document).ready(function () {
+        $(".tab-carousel").slick({
+          autoplay: false,
+          dots: false,
+          infinite: false,
+          speed: 500,
+          slidesToShow: 8,
+          prevArrow: "",
+          nextArrow: "",
+          settings: "unslick",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToScroll: 1,
+
+                slidesToShow: 6,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+      // ================fotter tab carousel end========
+      // ==-======================foter sectopn start===============
+    </script>
+  </body>
+</html>

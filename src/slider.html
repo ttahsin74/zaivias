@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick Slider Example</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .team-member-slide {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .team-member-slide img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+        z-index: 1;
+        filter: grayscale(100%);
+      }
+
+      .team-member-slide.slick-center img {
+        filter: none;
+      }
+
+      #slide-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-[1320px] m-auto">
+      <div class="">
+        <h2
+          class="uppercase lg:text-[40px] text-[28px] sm:text-[30px] md:text-[35px] font-bold leading-[38px] text-[#303030] text-center sm:text-left"
+        >
+          Meet Your Dream Team
+        </h2>
+        <div class="flex items-bottom justify-between">
+          <div>
+            <p
+              class="xl:text-xl text-base leading-[26px] mt-5 mb-9 text-[#303030]"
+            >
+              A first-class team dedicated to unlocking your ultimate
+              achievements.
+            </p>
+          </div>
+          <div class="flex items-center md:gap-10 gap-5">
+            <div>
+              <button
+                id="trainer-prev"
+                class="custom-prev slider-button text-[#030125] rounded-full w-10 h-10 border-2 border-[#0301257c]"
+              >
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                id="trainer-next"
+                class="custom-next slider-button text-[#030125] rounded-full w-10 h-10 border-2 border-[#0301257c]"
+              >
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Container">
+        <!-- Team Member Slider -->
+        <div class="team-slider">
+          <div class="team-member-slide">
+            <img
+              src="./image/maricris.avif"
+              alt="Maricris Lapaix
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/chris.avif"
+              alt="Chris Hemsworth
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/elsa.webp"
+              alt="Elsa Pataky
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/sergio.webp"
+              alt="Sergio Perera
+        "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img src="./image/jess-kilts.avif" alt="Jess Kilts" />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/ingrid.avif"
+              alt="Ingrid Clay
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/ashley.avif"
+              alt="Ashley Joi
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/alexz.avif"
+              alt="Alexz Parvi
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/angie.avif"
+              alt="Angie Asche
+          "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/bobby.avif"
+              alt="Bobby Holland Hanton
+        "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img
+              src="./image/dan.avif"
+              alt="Dan Churchill
+        "
+            />
+          </div>
+          <div class="team-member-slide">
+            <img src="./image/jess-kilts.avif" alt="Jess Kilts" />
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div class="Container m-auto">
+            <div class="p-5 text-center border rounded-xl relative">
+              <div
+                class="w-[0] h-0 absolute left-[50%] translate-x-[-50%] top-[-10px]"
+                style="
+                  border-left: 10px solid transparent;
+                  border-right: 10px solid transparent;
+                  border-bottom: 10px solid #555;
+                "
+              ></div>
+              <h2 class="text-2xl font-semibold text-[#313131]" id="slide-name">
+                Trainer Name
+              </h2>
+              <div class="mt-2">
+                <h5 class="text-lg font-semibold text-[#313131]">Founder</h5>
+              </div>
+              <div class="mt-3">
+                <p id="slide-info text-base text-[#313131] font-normal">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum
+                  quia exercitationem. Voluptates itaque perferendis esse
+                  repellendus dignissimos ducimus autem beatae, eligendi facere
+                  accusamus, minima officiis, dolorum commodi nostrum explicabo
+                  temporibus laudantium placeat ea natus est perspiciatis saepe!
+                  Id modi et neque eius!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Slick Slider Initialization -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        let slickSlider = $(".team-slider").slick({
+          centerMode: true,
+          centerPadding: "0",
+          infinite: true,
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+        $("#trainer-prev").click(function () {
+          $(".team-slider").slick("slickPrev");
+        });
+
+        $("#trainer-next").click(function () {
+          $(".team-slider").slick("slickNext");
+        });
+
+        function updateSlideInfo(slick, currentIndex) {
+          let currentSlide = slick.$slides[currentIndex];
+          let imgAlt = $(currentSlide).find("img").attr("alt");
+          let infoText = getSlideInfoText(imgAlt);
+
+          $("#slide-name").text(imgAlt);
+          $("#slide-info").text(infoText);
+        }
+
+        function getSlideInfoText(slideName) {
+          switch (slideName) {
+            case "Maricris Lapaix":
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            case "Chris Hemsworth":
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis egendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            case "Ashley Joi":
+              return "tetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis esse repellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            // Add more cases as needed for each image alt
+            default:
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis esse repellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+          }
+        }
+
+        $(".team-slider").on(
+          "beforeChange",
+          function (event, slick, currentSlide, nextSlide) {
+            // Reset all images to their original size and apply grayscale
+            $(".slick-slide img").css({
+              filter: "grayscale(100%)",
+            });
+          }
+        );
+
+        $(".team-slider").on(
+          "afterChange",
+          function (event, slick, currentSlide) {
+            // Remove grayscale filter from the active slide
+            $(".slick-center img").css({
+              filter: "none",
+            });
+
+            // Update the detailed information for the active slide
+            updateSlideInfo(slick, currentSlide);
+          }
+        );
+
+        // Initial update of detailed information for the first slide
+        updateSlideInfo($(".team-slider").slick("getSlick"), 0);
+      });
+    </script>
+  </body>
+</html>

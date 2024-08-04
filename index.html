@@ -1,0 +1,2961 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./font-awsome-css/all.min.css" />
+    <link rel="stylesheet" href="./font-awsome-css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owl-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owl-css/owl.theme.default.min.css"
+    />
+    <style>
+      .date-input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      /* Hide the calendar icon specifically for WebKit browsers */
+      .date-input::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <!-- ==========================nav section start======================= -->
+    <section class="sticky top-0 left-0 z-10">
+      <nav class="bg-[#1E293B]">
+        <div class="Container m-auto px-4">
+          <div class="flex items-center justify-between py-1">
+            <div class="py-2">
+              <a href="./index.html">
+                <img
+                  class="w-[155px] cursor-pointer"
+                  src="src/image/zaivias-logo.png"
+                  alt="zaivias logo"
+                />
+              </a>
+            </div>
+            <div class="text-base md:block hidden">
+              <ul class="flex gap-4 text-[#dfdfdf]">
+                <li><a href="" class="text-decoration-none">Session</a></li>
+                <li><a href="" class="text-decoration-none">Experience</a></li>
+                <li>
+                  <a href="" class="text-decoration-none capitalize"
+                    >Pro Expert</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex text-[#d8d8d8] items-center gap-4">
+              <div class="md:flex items-center gap-2 hidden">
+                <p
+                  style="font-size: 12px"
+                  class="uppercase py-2 px-4 hover:bg-[#5050503f] rounded-3xl cursor-pointe"
+                >
+                  ZAIVIAS home
+                </p>
+                <div>
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+              </div>
+              <div
+                style="border: 1px solid white; padding: 8px 18px"
+                class="rounded-3xl relative"
+                id="mainDiv"
+              >
+                <div class="flex items-center gap-3">
+                  <div>
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+                </div>
+                <!-- ============login option========= -->
+                <div
+                  id="myModal"
+                  class="modal-content bg-[#e4e4e4] hidden absolute rounded-xl w-[200px] top-11 right-0 py-2 px-4 z-20"
+                >
+                  <div class="border-b border-b-[#0000001c] pb-2">
+                    <p
+                      class="text-[#313131] text-base p-2 text-left cursor-pointer"
+                    >
+                      <a href="./src/Signup.html"> Sign Up</a>
+                    </p>
+                    <p
+                      class="text-[#313131] text-base p-2 text-left cursor-pointer"
+                    >
+                      <a class="block" href="./src/login.html">Log in</a>
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <p
+                      class="text-[#313131] text-base p-2 text-left cursor-pointer"
+                    >
+                      Gift Cards
+                    </p>
+                    <p
+                      class="text-[#313131] text-base p-2 text-left cursor-pointer"
+                    >
+                      Zaivias Home
+                    </p>
+                    <p
+                      class="text-[#313131] text-base p-2 text-left cursor-pointer"
+                    >
+                      Help Center
+                    </p>
+                  </div>
+                </div>
+                <!-- ============login option========= -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- ==========================nav section end======================= -->
+
+    <!-- ======================responsive search====================== -->
+    <section class="lg:my-10 sm:my-4 my-2 lg:hidden block">
+      <div class="Container m-auto lg:p-5 px-4">
+        <div
+          id="searchBox"
+          class="flex items-center gap-5 bg-[#ffffff] shadow-sm hover:shadow-lg rounded-[35px] mt-5 py-2 px-5 border-2"
+        >
+          <div class="text-2xl text-[#3b3b3b]">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="">
+            <p class="text-base text-[#3b3b3b] font-normal leading-4">
+              Where to ?
+            </p>
+            <span class="text-sm text-[#aaaaaa] font-normal"
+              >Activity . Add Geust . Location</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================responsive search====================== -->
+
+    <!-- =======Search section start======================== -->
+    <section
+      id="showSearchItems"
+      class="lg:my-[30px] bg-white lg:static z-30 duration-200 absolute top-[-120%] left-0 md:w-auto w-full"
+    >
+      <div class="lg:hidden block Container px-4 m-auto">
+        <div
+          id="closeSearch"
+          class="flex cursor-pointer items-center justify-center rounded-full bg-[#0000001f] text-2xl w-12 h-12 mt-4"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="Container px-4 my-4 mx-auto">
+        <div
+          class="bg-[white] shadow-sm hover:shadow-lg md:rounded-[55px] rounded-2xl flex items-center sm:justify-center md:justify-normal border-2 md:w-[760px] md:flex-nowrap flex-wrap lg:w-[970px] m-auto md:p-0 p-2 gap-2 md:gap-0"
+        >
+          <div
+            class="rounded-[55px] duration-300 hover:bg-[#EBEBEB] py-3 md:w-[20%] sm:w-[40%] w-full"
+          >
+            <div class="mx-5 overflow-hidden">
+              <label for="" class="text-sm text-[#3b3b3b] block"
+                >Activity</label
+              >
+              <input
+                type="text"
+                placeholder="Search Activity"
+                class="flex-1 outline-none bg-transparent placeholder-[#aaaaaa] text-sm"
+              />
+            </div>
+          </div>
+
+          <div
+            class="md:w-[15%] sm:w-[40%] w-full py-[12px] rounded-[50px] overflow-hidden duration-300 hover:bg-[#EBEBEB]"
+          >
+            <div class="mx-5">
+              <label for="" class="text-sm text-[#3b3b3b] block"
+                >Duration</label
+              >
+              <input
+                type="text"
+                placeholder="Select Duration"
+                class="flex-1 outline-none bg-transparent placeholder-[#aaaaaa] text-sm"
+              />
+            </div>
+          </div>
+          <div
+            class="md:w-[15%] py-[12px] sm:w-[40%] w-full rounded-[50px] duration-300 hover:bg-[#EBEBEB]"
+          >
+            <div class="mx-5">
+              <p class="text-sm text-[#3b3b3b]">Start Date</p>
+              <input
+                type="date"
+                placeholder="Search Activity"
+                class="date-input flex-1 outline-none bg-transparent text-[#aaaaaa] text-sm appearance-none"
+              />
+            </div>
+          </div>
+          <div
+            class="md:w-[15%] sm:w-[40%] w-full py-[12px] rounded-[50px] overflow-hidden duration-300 hover:bg-[#EBEBEB]"
+          >
+            <div class="mx-5">
+              <p class="text-sm text-[#3b3b3b]">End Date</p>
+              <input
+                type="date"
+                placeholder="Search Activity"
+                class="date-input date-input-end flex-1 outline-none bg-transparent text-[#aaaaaa] text-sm appearance-none"
+              />
+            </div>
+          </div>
+          <div
+            class="md:w-[20%] sm:w-[40%] w-full py-[12px] rounded-[50px] overflow-hidden duration-300 hover:bg-[#EBEBEB]"
+          >
+            <div class="mx-5">
+              <div class="flex items-center gap-2 text-sm mb-1">
+                <input type="checkbox" class="w-[12px]" id="single" />
+                <label class="text-[#3b3b3b]" for="single ">One on One</label>
+              </div>
+              <div class="flex items-center gap-2 text-sm mt-[3px ]">
+                <input
+                  class="w-[12px] bg-[#1E293B]"
+                  type="checkbox"
+                  id="group"
+                />
+                <label class="text-[#3b3b3b]" for="group">Group</label>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-[55px] duration-300 hover:bg-[#EBEBEB] py-3 md:w-[15%] sm:w-[40%] w-full"
+          >
+            <div class="mx-5 overflow-hidden">
+              <label for="" class="text-sm text-[#3b3b3b] block"
+                >Location</label
+              >
+              <input
+                type="text"
+                placeholder="Select Location"
+                class="flex-1 outline-none bg-transparent placeholder-[#aaaaaa] text-sm"
+              />
+            </div>
+          </div>
+
+          <div
+            class="md:w-[5%] sm:w-[70%] w-full text-right md:mx-3 duration-300 md:pb-0 pb-4"
+          >
+            <button
+              class="bg-[#1E293B] flex items-center justify-center gap-3 rounded-[35px] w-full md:w-12 md:h-12 text-white text-center px-4 py-3 md:rounded-full"
+            >
+              <div class="mt-[3px] md:mt-0">
+                <i class="fas fa-search"></i>
+              </div>
+              <p class="text-base font-semibold md:hidden block">Search</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======Search section end======================== -->
+
+    <!-- =============carasol section start=========================== -->
+
+    <section class="md:my-10 my-6">
+      <div class="Container overflow-hidden px-4 m-auto">
+        <div
+          style="margin-top: 20px"
+          class="relative w-full mx-auto slider-Container"
+        >
+          <div class="owl-carousel categoryCarousel">
+            <div class="item slide">
+              <a href="./src/category.html">
+                <img
+                  style="width: 30px; margin: auto"
+                  src="src/image/icons.webp"
+                  alt="Image 1"
+                  class="w-full"
+                />
+                <p
+                  style="
+                    margin: auto;
+                    text-align: center;
+                    font-size: 14px;
+                    margin-top: 4px;
+                    font-weight: 600;
+                  "
+                >
+                  Icons
+                </p>
+              </a>
+            </div>
+            <div class="item slide">
+              <a href="./src/category.html">
+                <img
+                  style="width: 30px; margin: auto"
+                  src="src/image/amazing-view.jpg"
+                  alt="Image 3"
+                  class="w-full"
+                />
+                <p
+                  style="
+                    margin: auto;
+                    text-align: center;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    margin-top: 4px;
+                    font-weight: 600;
+                  "
+                  class="whitespace-nowrap"
+                >
+                  Amaizing View
+                </p>
+              </a>
+            </div>
+            <div class="item slide">
+              <a href="./src/category.html">
+                <img
+                  style="width: 30px; margin: auto"
+                  src="src/image/tropical.jpg"
+                  alt="Image 2"
+                  class=""
+                />
+                <p
+                  style="
+                    margin: auto;
+                    text-align: center;
+                    font-size: 14px;
+                    margin-top: 4px;
+                    font-weight: 600;
+                  "
+                >
+                  Tropical
+                </p>
+              </a>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/rooms.jpg"
+                alt="Image 13"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Rooms
+              </p>
+            </div>
+
+            <div class="item slide slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/beach.jpg"
+                alt="Image 5"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Beach
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/cabin.jpg"
+                alt="Image 6"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Cabins
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/amazing pools.jpg"
+                alt="Image 4"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Amaizing Pools
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/island.jpg"
+                alt="Image 7"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Island
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/bad-brakfast.jpg"
+                alt="Image 8"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Bad & breakfast
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/play.jpg"
+                alt="Image 10"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  font-weight: 600;
+                "
+              >
+                Play
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/arctic.jpg"
+                alt="Image 9"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Mansions
+              </p>
+            </div>
+
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/farms.jpg"
+                alt="Image 11"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                Farms
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/omg.jpg"
+                alt="Image 12"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                OMG!
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/omg.jpg"
+                alt="Image 12"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                OMG!
+              </p>
+            </div>
+            <div class="item slide">
+              <img
+                style="width: 30px; margin: auto"
+                src="src/image/omg.jpg"
+                alt="Image 12"
+                class="w-full"
+              />
+              <p
+                style="
+                  margin: auto;
+                  text-align: center;
+
+                  white-space: nowrap;
+                  font-size: 14px;
+                  margin-top: 4px;
+                  font-weight: 600;
+                "
+              >
+                OMG!
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="custom-prev slider-button absolute top-1/2 left-0 transform -translate-y-1/2 text-[#1E293B] py-1 px-[3px] rounded-full opacity-50 bg-white z-10"
+            onclick="$('.categoryCarousel').trigger('prev.owl.carousel')"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            class="custom-next slider-button absolute top-1/2 right-0 transform border -translate-y-1/2 py-1 px-[3px] rounded-full text-[#1E293B] opacity-50 bg-white z-10"
+            onclick="$('.categoryCarousel').trigger('next.owl.carousel')"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============carasol section end=========================== -->
+
+    <!-- =============card section start===================== -->
+
+    <section class="md:my-10 my-6">
+      <div class="Container px-4 m-auto">
+        <div
+          class="max-w-[450px] m-auto sm:min-w-full sm:max-w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-5 gap-3"
+        >
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <a href="./src/service-gig.html">
+                  <img
+                    class="rounded-t-lg h-full w-full"
+                    src="src/image/running-gym.jpg"
+                    alt=""
+                  />
+                </a>
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="./src/vandor.html">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  <a href="">Train at the X-Mansion</a>
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-sm">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/gym-dumbells.png"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/gem-center.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/360_F_239061129_tY7wxng3l5D46kkWmYVg0ngkSme3pSxY.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/360_F_239061129_tY7wxng3l5D46kkWmYVg0ngkSme3pSxY.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-[#e9e9e9] rounded-lg">
+            <div class="relative">
+              <picture>
+                <img
+                  class="rounded-t-lg h-full w-full"
+                  src="src/image/running-gym.jpg"
+                  alt=""
+                />
+              </picture>
+              <div
+                class="text-lg py-1 px-[10px] cursor-pointer bg-[#acacac48] absolute top-4 right-4 rounded-full font-[200]"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+            </div>
+            <div style="margin-top: 15px" class="">
+              <div class="flex items-center justify-between">
+                <div class="flex gap-2 items-center">
+                  <img
+                    style="width: 30px"
+                    class="rounded-full"
+                    src="src/image/vandor-one.avif"
+                    alt=""
+                  />
+                  <p class="font-semibold text-[#303030] leading-7">
+                    <a href="">Luke Zocchi</a>
+                  </p>
+                </div>
+                <p class="text-[#303030] text-sm">35 mins</p>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-semibold text-[#303030]">
+                  Train at the X-Mansion
+                </h4>
+                <div class="flex items-center gap-1 text-[10px] text-[#FFC409]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 h-[100px]">
+              <p>
+                Take your functional performance to new heights with the first
+              </p>
+              <div>
+                <p class="font-semibold text-[#303030] text-right mt-4">
+                  Starting From <span>$100</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 text-[13px]">
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Functional Training
+              </button>
+              <button
+                class="px-2 bg-[#1E293B] rounded-sm text-[#e2e2e2] leading-[20px]"
+              >
+                Dumbbells
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============card section end===================== -->
+
+    <!-- ====================info-section====================== -->
+    <section class="md:my-10 my-6">
+      <div class="Container px-4 m-auto overflow-hidden">
+        <div
+          class="xl:h-[350px] h-[300px] w-full info-bg rounded-lg overflow-hidden"
+        >
+          <div class="bg-color-info rounded-lg overflow-hidden">
+            <div class="lg:p-[70px] sm:py-10 py-[20px] px-5">
+              <div class="pb-12">
+                <h3
+                  class="lg:text-[40px] text-[28px] sm:text-[30px] md:text-[35px] font-medium text-[white] mb-4"
+                >
+                  Achieve Your Ultimate Fitness Goals
+                </h3>
+                <p
+                  class="md:w-[500px] sm:w-[300px] md:text-base text-sm text-[white]"
+                >
+                  Unleash your peak fitness potential! Set a SMART (Specific,
+                  Measurable) goal. Start small, enjoy the journey, dominate!
+                </p>
+                <button
+                  class="bg-[#E8D787] px-4 py-2 mt-7 rounded-md font-semibold w-[250px] text-center flex items-center gap-3 justify-center text-[#050328]"
+                >
+                  <p>Visit all offers</p>
+                  <span class="mt-[3px]"
+                    ><i class="fa-solid fa-arrow-right-long"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================info-section====================== -->
+
+    <!-- ======================trainer-carusol section start=============== -->
+    <section class="my-[40px]">
+      <div>
+        <div class="Container overflow-hidden px-4 m-auto">
+          <div class="">
+            <h2
+              class="uppercase lg:text-[40px] text-[28px] sm:text-[30px] md:text-[35px] font-bold leading-[38px] text-[#303030] text-center sm:text-left"
+            >
+              Meet Your Dream Team
+            </h2>
+            <div class="flex items-bottom justify-between">
+              <div>
+                <p
+                  class="xl:text-xl text-base leading-[26px] mt-5 mb-9 text-[#303030]"
+                >
+                  A first-class team dedicated to unlocking your ultimate
+                  achievements.
+                </p>
+              </div>
+              <div class="flex items-center md:gap-10 gap-5">
+                <div>
+                  <button
+                    id="trainer-prev"
+                    class="custom-slider-controls text-[#030125] rounded-full w-10 h-10 border-2 border-[#0301257c]"
+                  >
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </button>
+                </div>
+                <div>
+                  <button
+                    id="trainer-next"
+                    class="custom-slider-controls text-[#030125] rounded-full w-10 h-10 border-2 border-[#0301257c]"
+                  >
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container overflow-x-hidden m-auto">
+          <!-- Team Member Slider -->
+          <div class="team-slider">
+            <div class="team-member-slide">
+              <img
+                src="./src/image/maricris.avif"
+                alt="Maricris Lapaix
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/chris.avif"
+                alt="Chris Hemsworth
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/elsa.webp"
+                alt="Elsa Pataky
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/sergio.webp"
+                alt="Sergio Perera
+          "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img src="./src/image/jess-kilts.avif" alt="Jess Kilts" />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/ingrid.avif"
+                alt="Ingrid Clay
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/ashley.avif"
+                alt="Ashley Joi
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/alexz.avif"
+                alt="Alexz Parvi
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/angie.avif"
+                alt="Angie Asche
+            "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/bobby.avif"
+                alt="Bobby Holland Hanton
+          "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img
+                src="./src/image/dan.avif"
+                alt="Dan Churchill
+          "
+              />
+            </div>
+            <div class="team-member-slide">
+              <img src="./src/image/jess-kilts.avif" alt="Jess Kilts" />
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="Container overflow-hidden px-4 m-auto">
+              <div class="p-5 text-center border rounded-xl relative">
+                <div
+                  class="w-[0] h-0 absolute left-[50%] translate-x-[-50%] top-[-10px]"
+                  style="
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #555;
+                  "
+                ></div>
+                <h2
+                  class="text-2xl font-semibold text-[#313131]"
+                  id="slide-name"
+                >
+                  Trainer Name
+                </h2>
+                <div class="mt-2">
+                  <h5 class="text-lg font-semibold text-[#313131]">Founder</h5>
+                </div>
+                <div class="mt-3">
+                  <p id="slide-info text-base text-[#313131] font-normal">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur deserunt nisi iusto autem! Quo accusamus iste
+                    nostrum quia exercitationem. Voluptates itaque perferendis
+                    esse repellendus dignissimos ducimus autem beatae, eligendi
+                    facere accusamus, minima officiis, dolorum commodi nostrum
+                    explicabo temporibus laudantium placeat ea natus est
+                    perspiciatis saepe! Id modi et neque eius!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================trainer-carusol section end=============== -->
+
+    <!-- ====================fotter section start========================== -->
+    <section class="bg-[#1E293B] text-white">
+      <div class="Container px-4 m-auto">
+        <footer class="md:py-10 py-5 sm:px-6 lg:px-0">
+          <div class="mx-auto">
+            <div class="flex md:flex-nowrap flex-wrap gap-10">
+              <!-- Company Info -->
+              <div class="md:w-[40%] w-full mt-5 md:mt-0">
+                <div class="flex items-center md:mb-4 mb-2">
+                  <a
+                    class="cursor-pointer block m-auto md:m-0"
+                    href="index.html"
+                  >
+                    <img
+                      class="w-[200px]"
+                      src="src/image/zaivias-logo.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="mb-4 text-[#cfcfcf] md:text-left text-center">
+                  Our company leads the industry in wealth management. We
+                  provide independent RIA and broker services that are powered
+                  by over 20 years of industry experience.
+                </p>
+              </div>
+              <div class="md:w-[50%] w-full">
+                <h4
+                  class="sm:text-[30px] text-[28px] font-semibold text-[#cfcfcf] mb-2 md:text-left text-center"
+                >
+                  Get Inspired Weekly
+                </h4>
+                <p class="text-base text-[#cfcfcf]">
+                  Every sunrise marks a new opportunity to pursue your passions.
+                  Embrace the journey with courage, and let each small victory
+                  inspire your continued growth.
+                </p>
+                <form action="">
+                  <div class="mt-5 flex items-center gap-4">
+                    <input
+                      class="w-[60%] py-1 px-4 outline-none border-none"
+                      placeholder="Write Your Email"
+                      type="text"
+                    />
+                    <button
+                      class="w-[130px] text-[#1E293B] text-center py-1 font-semibold bg-[#E9D87D]"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <div class="relative">
+              <div
+                id="footer"
+                class="tab-carousel relative flex items-center gap-8 border-b-2 border-[#e2e2e285] text-left"
+              >
+                <button
+                  id="tab1"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Popular
+                </button>
+                <button
+                  id="tab2"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Arts & culture
+                </button>
+                <button
+                  id="tab3"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Outdoors
+                </button>
+                <button
+                  id="tab4"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Mountains
+                </button>
+                <button
+                  id="tab5"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Unique stays
+                </button>
+                <button
+                  id="tab6"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Categories
+                </button>
+                <button
+                  id="tab7"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Things to do
+                </button>
+                <button
+                  id="tab8"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Tips & inspiration
+                </button>
+                <button
+                  id="tab9"
+                  class="tabButton sm:text-base text-sm py-3 whitespace-nowrap slider-item"
+                >
+                  Trainers
+                </button>
+              </div>
+              <button
+                class="custom-prev lg:hidden block slider-button absolute top-1/2 left-0 transform -translate-y-1/2 text-[#ffffff87] px-2 py-[1px] rounded-full opacity-50 bg-[#1e293b46] text-sm"
+                onclick="$('.tab-carousel').slick('slickPrev')"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="custom-next lg:hidden block slider-button absolute top-1/2 right-0 transform border -translate-y-1/2 px-2 py-[1px] rounded-full text-[#ffffff87] opacity-50 bg-[#1e293b46] text-sm"
+                onclick="$('.tab-carousel').slick('slickNext')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div id="tabContent" class="mt-5">
+              <div id="tabPanel1" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Popular
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel2" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Arts & culture
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel3" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Outdoors
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel4" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Mountains
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel5" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Unique stays
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel6" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Category
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel7" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      things to do
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel8" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      tips & inspiration
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tabPanel9" class="tabPanel hidden">
+                <div
+                  class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-5"
+                >
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">
+                      Trainers
+                    </h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                  <div class="text-center sm:text-left">
+                    <h5 class="text-lg font-semibold text-[#cfcfcf]">Health</h5>
+                    <p class="text-[#cfcfcf] text-base">Body Fitness</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center md:gap-8 gap-3 mt-8 flex-wrap">
+            <h3 class="text-lg font-semibold mr-4">CONTACT US</h3>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-phone-alt mr-2"></i>
+              <p class="">+880123456789</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-envelope mr-2"></i>
+              <p class="">zaivias@example.com</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <p>California, USA</p>
+            </div>
+          </div>
+          <div
+            class="mt-5 border-t gap-4 border-gray-700 pt-6 flex flex-wrap justify-between items-center"
+          >
+            <p class="text-sm sm:text-base">
+              2024 © All Rights Reserved ||
+              <a class="text-[#E9D87D]" href="./index.html">ZAIVIAS</a> ||
+              Designed and Developed by
+              <a class="text-[#E9D87D]" href="https://skydreamit.com/">
+                Sky Dream IT</a
+              >
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-[#0866FF]"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="hover:text-yellow-500"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-yellow-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-yellow-500"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ====================fotter section end========================== -->
+
+    <script src="./src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./owl-js/owl.carousel.js"></script>
+    <script src="./owl-js/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Toggle dropdown visibility when button is clicked
+        $("#mainDiv").on("click", function (event) {
+          $("#myModal").toggleClass("hidden");
+          event.stopPropagation(); // Prevent event from bubbling up to the document
+        });
+
+        // Hide dropdown when clicking outside of it
+        $(document).on("click", function (event) {
+          if (!$(event.target).closest("#mainDiv, #myModal").length) {
+            $("#myModal").addClass("hidden");
+          }
+        });
+
+        // Prevent hiding when clicking inside the dropdown
+        $("#myModal").on("click", function (event) {
+          event.stopPropagation();
+        });
+      });
+
+      // ======================search section=========================
+      document.addEventListener("DOMContentLoaded", function () {
+        var dateInput = document.querySelector(".date-input");
+        dateInput.addEventListener("focus", function () {
+          this.showPicker();
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        var dateInput = document.querySelector(".date-input-end");
+        dateInput.addEventListener("focus", function () {
+          this.showPicker();
+        });
+      });
+      // ======================search section=========================
+      // =================== carousel category start ==================
+      $(document).ready(function () {
+        var $owl = $(".categoryCarousel");
+
+        function initializeCarousel() {
+          $owl.owlCarousel({
+            loop: false, // Disable looping
+            margin: 10,
+            nav: false,
+            dots: false,
+            responsive: {
+              0: {
+                items: 3,
+              },
+              600: {
+                items: 7,
+              },
+              1000: {
+                items: 13,
+              },
+            },
+          });
+
+          // Initially hide the left arrow
+          $(".custom-prev").hide();
+
+          // Function to update the visibility of arrows
+          function updateArrows(event) {
+            var currentIndex = event.item.index;
+            var itemsPerPage = event.page.size;
+            var totalItems = event.item.count;
+
+            // Show/hide left arrow
+            if (currentIndex === 0) {
+              $(".custom-prev").hide();
+            } else {
+              $(".custom-prev").show();
+            }
+
+            // Show/hide right arrow
+            if (currentIndex + itemsPerPage >= totalItems) {
+              $(".custom-next").hide();
+            } else {
+              $(".custom-next").show();
+            }
+          }
+
+          // Attach the handler to the 'changed.owl.carousel' event
+          $owl.on("changed.owl.carousel", updateArrows);
+
+          // Trigger to ensure correct initial state
+          $owl.trigger("changed.owl.carousel", {
+            item: { index: 0 },
+            page: { size: $owl.find(".owl-item").length },
+          });
+        }
+
+        // Initialize carousel
+        initializeCarousel();
+
+        // Reinitialize carousel on window resize
+        $(window).on("resize", function () {
+          $owl.trigger("refresh.owl.carousel");
+        });
+      });
+
+      // =================== carousel category end ==================
+
+      // ===========trainer-carousel=================
+
+      $(document).ready(function () {
+        let slickSlider = $(".team-slider").slick({
+          centerMode: true,
+          centerPadding: "0",
+          infinite: true,
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+          ],
+        });
+        $("#trainer-prev").click(function () {
+          $(".team-slider").slick("slickPrev");
+        });
+
+        $("#trainer-next").click(function () {
+          $(".team-slider").slick("slickNext");
+        });
+
+        function updateSlideInfo(slick, currentIndex) {
+          let currentSlide = slick.$slides[currentIndex];
+          let imgAlt = $(currentSlide).find("img").attr("alt");
+          let infoText = getSlideInfoText(imgAlt);
+
+          $("#slide-name").text(imgAlt);
+          $("#slide-info").text(infoText);
+        }
+
+        function getSlideInfoText(slideName) {
+          switch (slideName) {
+            case "Maricris Lapaix":
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            case "Chris Hemsworth":
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis egendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            case "Ashley Joi":
+              return "tetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis esse repellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+            // Add more cases as needed for each image alt
+            default:
+              return "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt nisi iusto autem! Quo accusamus iste nostrum quia exercitationem. Voluptates itaque perferendis esse repellendus dignissimos ducimus autem beatae, eligendi facere accusamus, minima officiis, dolorum commodi nostrum explicabo temporibus laudantium placeat ea natus est perspiciatis saepe! Id modi et neque eius!";
+          }
+        }
+
+        $(".team-slider").on(
+          "beforeChange",
+          function (event, slick, currentSlide, nextSlide) {
+            // Reset all images to their original size and apply grayscale
+            $(".slick-slide img").css({
+              filter: "grayscale(100%)",
+            });
+          }
+        );
+
+        $(".team-slider").on(
+          "afterChange",
+          function (event, slick, currentSlide) {
+            // Remove grayscale filter from the active slide
+            $(".slick-center img").css({
+              filter: "none",
+            });
+
+            // Update the detailed information for the active slide
+            updateSlideInfo(slick, currentSlide);
+          }
+        );
+
+        // Initial update of detailed information for the first slide
+        updateSlideInfo($(".team-slider").slick("getSlick"), 0);
+      });
+      // ===========trainer-carousel=================
+
+      // ================fotter tab carousel start========
+      $(document).ready(function () {
+        $(".tab-carousel").slick({
+          autoplay: false,
+          dots: false,
+          infinite: false,
+          speed: 500,
+          slidesToShow: 8,
+          prevArrow: "",
+          nextArrow: "",
+          settings: "unslick",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToScroll: 1,
+
+                slidesToShow: 6,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+      // ================fotter tab carousel end========
+    </script>
+  </body>
+</html>
